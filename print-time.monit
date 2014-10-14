@@ -1,0 +1,3 @@
+check process print-time with pidfile /tmp/print-time.pid
+  start program = "/usr/local/scripts/print-time"
+  stop program  = "/bin/bash -c '/bin/kill `/bin/cat /tmp/print-time.pid`'"
