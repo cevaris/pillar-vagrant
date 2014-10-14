@@ -1,5 +1,5 @@
 class base {
 
-    include monit
+    include base::install   
 
 }
