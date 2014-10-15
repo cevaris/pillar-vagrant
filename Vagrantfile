@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = 'precise64'
   config.vm.box_url = 'https://s3.amazonaws.com/se.ubuntu/precise64.box'
 
-  config.vm.synced_folder PILLAR_PATH, "/usr/local/pillar"
+  config.vm.synced_folder PILLAR_PATH, "/git/pillar/"
 
    config.vm.define 'agent00' do |node|
     node.vm.hostname = 'agent00.vagrant.test'

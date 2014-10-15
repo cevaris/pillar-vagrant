@@ -9,6 +9,6 @@ class roles::agent {
     }
 
     rbenv::plugin { 'sstephenson/ruby-build': }
-    rbenv::build { '2.1.2': global => true }
+    rbenv::build  { '2.1.2': global => true }
 
 }
